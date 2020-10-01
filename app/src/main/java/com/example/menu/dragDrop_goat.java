@@ -248,14 +248,22 @@ public class dragDrop_goat extends AppCompatActivity implements View.OnTouchList
             }
         }
 
-        if(isGoat==true && isHorse==true && isHouse==true){
-            TextView horse_later = findViewById(R.id.horse_later);
-            TextView house_later = findViewById(R.id.house_later);
-            TextView goat_later = findViewById(R.id.goat_later);
+//         if(isGoat==true && isHorse==true && isHouse==true){
+        if(isGoat==true)
+        {
+            if(isHorse==true)
+            {
+                if(isHouse==true)
+                {
+                    TextView horse_later = findViewById(R.id.horse_later);
+                    TextView house_later = findViewById(R.id.house_later);
+                    TextView goat_later = findViewById(R.id.goat_later);
 
-            horse_later.setVisibility(View.VISIBLE);
-            house_later.setVisibility(View.VISIBLE);
-            goat_later.setVisibility(View.VISIBLE);
+                    horse_later.setVisibility(View.VISIBLE);
+                    house_later.setVisibility(View.VISIBLE);
+                    goat_later.setVisibility(View.VISIBLE);
+                }
+            }
         }
         return true;
     }
